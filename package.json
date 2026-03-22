@@ -8,7 +8,9 @@
     "start": "next start",
     "format-check": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "eslint"
+    "lint": "eslint",
+    "screenshot": "playwright test tests/screenshots.spec.ts",
+    "screenshot:mobile": "playwright test tests/screenshots-mobile.spec.ts"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -18,6 +20,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
