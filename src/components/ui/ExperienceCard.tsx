@@ -46,7 +46,7 @@ export default function ExperienceCard({
       <ul className="mt-2 flex flex-col gap-1 text-foreground/70">
         {description.map((item, i) => (
           <li key={i} className="flex items-start gap-2">
-            <span className="text-primary mt-1">▸</span>
+            <span className="text-primary">▸</span>
             <span>{item}</span>
           </li>
         ))}
