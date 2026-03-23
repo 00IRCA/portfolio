@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface Props {
   title: string;
   description: string;
@@ -18,7 +20,13 @@ export default function ProjectCard({
   return (
     <div className="flex flex-col border border-foreground/10 bg-foreground/3 rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(64,198,255,0.15)] hover:border-primary/30 group">
       {imageUrl ? (
-        <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={600}
+          height={192}
+          className="w-full h-48 object-cover"
+        />
       ) : (
         <div className="w-full h-36 bg-linear-to-br from-primary/20 via-primary/8 to-transparent flex items-center justify-center overflow-hidden relative">
           <span className="absolute text-8xl font-black text-primary/10 tracking-tighter select-none leading-none">

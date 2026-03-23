@@ -58,7 +58,12 @@ export default function ContactForm() {
   const isLoading = status === 'loading';
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} noValidate className="w-full flex flex-col gap-4 text-left">
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      noValidate
+      className="w-full flex flex-col gap-4 text-left"
+    >
       {status === 'success' && (
         <p className="text-primary font-medium text-center">
           Message sent! I&apos;ll get back to you soon.
@@ -71,13 +76,15 @@ export default function ContactForm() {
       )}
 
       <div>
-        <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
+        <label htmlFor="name" className="block text-sm font-medium mb-1">
+          Name
+        </label>
         <input
           id="name"
           type="text"
           name="name"
           value={fields.name}
-          onChange={e => setFields(f => ({ ...f, name: e.target.value }))}
+          onChange={(e) => setFields((f) => ({ ...f, name: e.target.value }))}
           disabled={isLoading}
           className={inputClass}
           placeholder="Your name"
@@ -86,13 +93,15 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
+        <label htmlFor="email" className="block text-sm font-medium mb-1">
+          Email
+        </label>
         <input
           id="email"
           type="email"
           name="email"
           value={fields.email}
-          onChange={e => setFields(f => ({ ...f, email: e.target.value }))}
+          onChange={(e) => setFields((f) => ({ ...f, email: e.target.value }))}
           disabled={isLoading}
           className={inputClass}
           placeholder="your@email.com"
@@ -101,13 +110,15 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
+        <label htmlFor="message" className="block text-sm font-medium mb-1">
+          Message
+        </label>
         <textarea
           id="message"
           name="message"
           rows={5}
           value={fields.message}
-          onChange={e => setFields(f => ({ ...f, message: e.target.value }))}
+          onChange={(e) => setFields((f) => ({ ...f, message: e.target.value }))}
           disabled={isLoading}
           className={inputClass}
           placeholder="What's on your mind?"

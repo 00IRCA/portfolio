@@ -53,16 +53,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Scripts
 
-| Command                    | Description                              |
-| -------------------------- | ---------------------------------------- |
-| `npm run dev`              | Start development server                 |
-| `npm run build`            | Build for production                     |
-| `npm run start`            | Start production server                  |
-| `npm run lint`             | Run ESLint                               |
-| `npm run format`           | Format code with Prettier                |
-| `npm run format-check`     | Check formatting without writing         |
-| `npm run screenshot`       | Run desktop screenshot tests (Playwright)|
-| `npm run screenshot:mobile`| Run mobile screenshot tests (Playwright) |
+| Command                     | Description                               |
+| --------------------------- | ----------------------------------------- |
+| `npm run dev`               | Start development server                  |
+| `npm run build`             | Build for production                      |
+| `npm run start`             | Start production server                   |
+| `npm run lint`              | Run ESLint                                |
+| `npm run format`            | Format code with Prettier                 |
+| `npm run format-check`      | Check formatting without writing          |
+| `npm run screenshot`        | Run desktop screenshot tests (Playwright) |
+| `npm run screenshot:mobile` | Run mobile screenshot tests (Playwright)  |
 
 ## Testing
 
