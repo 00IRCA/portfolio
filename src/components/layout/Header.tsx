@@ -63,7 +63,11 @@ export default function Header() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     setMenuOpen(false);
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    const el = document.getElementById(id);
+    if (!el) return;
+    const headerHeight = document.querySelector('header')?.offsetHeight ?? 0;
+    const top = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+    window.scrollTo({ top, behavior: 'smooth' });
   };
 
   return (
