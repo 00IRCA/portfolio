@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import SocialLink from '../ui/SocialLink';
 import InteractiveImage from '../ui/InteractiveImage';
 import { SECTION_IDS } from '@/src/constants/sections';
 import { fadeUp, staggerContainer } from '@/src/constants/animations';
@@ -47,13 +46,6 @@ export default function HeroSection() {
           >
             View Projects
           </a>
-        </motion.div>
-        <motion.div variants={fadeUp}>
-          <SocialLink
-            href="https://www.linkedin.com/in/ismael-ruiz-carlin/"
-            label="Profile"
-            icon="/linkedin.png"
-          />
         </motion.div>
       </motion.div>
       <div className="relative z-10 hidden md:block">
