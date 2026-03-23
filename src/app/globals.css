@@ -44,6 +44,14 @@ body {
   font-family: var(--font-inter);
 }
 
+/* Icons with white fill need inversion in light mode */
+.theme-invert {
+  filter: invert(1);
+}
+.dark .theme-invert {
+  filter: none;
+}
+
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;

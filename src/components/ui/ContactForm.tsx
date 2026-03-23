@@ -58,7 +58,7 @@ export default function ContactForm() {
   const isLoading = status === 'loading';
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} noValidate className="w-full max-w-lg flex flex-col gap-4 text-left">
+    <form ref={formRef} onSubmit={handleSubmit} noValidate className="w-full flex flex-col gap-4 text-left">
       {status === 'success' && (
         <p className="text-primary font-medium text-center">
           Message sent! I&apos;ll get back to you soon.

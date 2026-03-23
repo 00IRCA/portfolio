@@ -19,7 +19,7 @@ export default function TechnologiesSection() {
       >
         {technologies.map((tech) => (
           <motion.div key={tech.name} variants={fadeUp} className="h-full">
-            <TechCard name={tech.name} icon={tech.icon} />
+            <TechCard name={tech.name} icon={tech.icon} lightInvert={tech.lightInvert} />
           </motion.div>
         ))}
       </motion.div>

@@ -20,9 +20,9 @@ export default function ProjectCard({
       {imageUrl ? (
         <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
       ) : (
-        <div className="w-full h-36 bg-linear-to-br from-primary/15 via-primary/5 to-transparent flex items-center justify-center">
-          <span className="text-4xl font-black text-primary/20 tracking-tight select-none">
-            {title.slice(0, 2).toUpperCase()}
+        <div className="w-full h-36 bg-linear-to-br from-primary/20 via-primary/8 to-transparent flex items-center justify-center overflow-hidden relative">
+          <span className="absolute text-8xl font-black text-primary/10 tracking-tighter select-none leading-none">
+            {title.toUpperCase()}
           </span>
         </div>
       )}

@@ -13,9 +13,13 @@ export default function Home() {
       <Header />
       <HeroSection />
       <AboutMeSection />
-      <TechnologiesSection />
+      <div className="bg-foreground/2">
+        <TechnologiesSection />
+      </div>
       <ExperienceSection />
-      <ProjectsSection />
+      <div className="bg-foreground/2">
+        <ProjectsSection />
+      </div>
       <ContactSection />
       <Footer />
     </>
