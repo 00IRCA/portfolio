@@ -1,5 +1,4 @@
 import Section from '../ui/Section';
-import SocialLink from '../ui/SocialLink';
 import ContactForm from '../ui/ContactForm';
 import { SECTION_IDS } from '@/src/constants/sections';
 
@@ -13,21 +12,6 @@ export default function ContactSection() {
         </p>
 
         <ContactForm />
-
-        <a
-          href="mailto:00ircarlin@gmail.com"
-          className="inline-block px-8 py-3 bg-primary text-background font-semibold rounded hover:opacity-90 transition-opacity duration-200"
-        >
-          00ircarlin@gmail.com
-        </a>
-
-        <div className="flex flex-row gap-4">
-          <SocialLink
-            href="https://www.linkedin.com/in/ismael-ruiz-carlin/"
-            label="LinkedIn"
-            icon="/linkedin.png"
-          />
-        </div>
       </div>
     </Section>
   );
