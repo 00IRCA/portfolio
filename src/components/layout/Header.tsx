@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { SECTION_IDS } from '@/src/constants/sections';
+import Image from 'next/image';
 import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
@@ -86,6 +87,31 @@ export default function Header() {
           <ul className="hidden md:flex flex-row gap-8 text-lg">
             <NavLinks activeId={activeId} onNavigate={handleScroll} />
           </ul>
+
+          <a
+            href="https://github.com/00IRCA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            className="opacity-70 hover:opacity-100 transition-opacity"
+          >
+            <Image src="/github.svg" alt="GitHub" width={20} height={20} className="theme-invert" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ismael-ruiz-carlin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            className="opacity-70 hover:opacity-100 transition-opacity"
+          >
+            <Image
+              src="/linkedin.svg"
+              alt="LinkedIn"
+              width={20}
+              height={20}
+              className="theme-invert"
+            />
+          </a>
 
           {/* Theme toggle */}
           <ThemeToggle />
