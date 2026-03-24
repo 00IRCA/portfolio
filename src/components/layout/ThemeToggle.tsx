@@ -1,13 +1,7 @@
 'use client';
 
-import { useEffect, useState, useSyncExternalStore } from 'react';
-
-function getInitialTheme(): boolean {
-  if (typeof window === 'undefined') return false;
-  const stored = localStorage.getItem('theme');
-  if (stored) return stored === 'dark';
-  return window.matchMedia('(prefers-color-scheme: dark)').matches;
-}
+import { useTheme } from 'next-themes';
+import { useSyncExternalStore } from 'react';
 
 function useIsMounted() {
   return useSyncExternalStore(
@@ -18,17 +12,11 @@ function useIsMounted() {
 }
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(getInitialTheme);
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', isDark);
-    document.documentElement.classList.toggle('light', !isDark);
-  }, [isDark]);
+  const { resolvedTheme, setTheme } = useTheme();
+  const isDark = resolvedTheme === 'dark';
 
   const toggleTheme = () => {
-    const next = !isDark;
-    setIsDark(next);
-    localStorage.setItem('theme', next ? 'dark' : 'light');
+    setTheme(isDark ? 'light' : 'dark');
   };
 
   if (!useIsMounted())

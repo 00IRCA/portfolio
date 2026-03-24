@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -24,8 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${roboto.variable} antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.variable} ${roboto.variable} antialiased`}>
+        <ThemeProvider attribute="data-theme">{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
