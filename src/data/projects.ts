@@ -12,7 +12,7 @@ export const projects = [
     description:
       'Frontend for Starban, an Instagram-inspired social network. Features infinite scroll feed, post creation with image upload, likes, comments, user profiles, follow system, and a ranking leaderboard. Built as a TFG (end-of-studies) project.',
     technologies: ['React', 'React Router', 'Axios', 'SCSS', 'Context API'],
-    imageUrl: '',
+    imageUrl: '/projects/starban-ui.jpg',
     liveUrl: '',
     repoUrl: 'https://github.com/00IRCA/starban-ui',
   },
@@ -21,7 +21,7 @@ export const projects = [
     description:
       'REST API backend for Starban. Handles authentication via Laravel Sanctum, image upload with automatic compression, personalized feed, follow system, search, and rankings. Built as a TFG (end-of-studies) project.',
     technologies: ['Laravel', 'PHP', 'MySQL', 'Laravel Sanctum'],
-    imageUrl: '',
+    imageUrl: '/projects/starban-cloud.jpg',
     liveUrl: '',
     repoUrl: 'https://github.com/00IRCA/starban-cloud',
   },
