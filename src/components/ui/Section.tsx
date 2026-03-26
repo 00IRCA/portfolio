@@ -14,15 +14,14 @@ interface Props {
 export default function Section({ id, title, className, children }: Props) {
   const sectionId = id ?? title?.toLowerCase().replace(/\s+/g, '-');
   return (
-    <motion.section
-      id={sectionId}
-      className={className}
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, margin: '-80px' }}
-    >
-      <div className="max-w-6xl mx-auto px-8 pt-8 pb-16 md:pb-32 xl:px-0 scroll-mt-20">
+    <section id={sectionId} className={className}>
+      <motion.div
+        className="max-w-6xl mx-auto px-8 pt-8 pb-16 md:pb-32 xl:px-0 scroll-mt-20"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, margin: '-80px' }}
+      >
         {title && (
           <div className="flex flex-col items-center mb-10 gap-3">
             <h2 className="text-3xl font-bold text-primary text-center">{title}</h2>
@@ -30,7 +29,7 @@ export default function Section({ id, title, className, children }: Props) {
           </div>
         )}
         {children}
-      </div>
-    </motion.section>
+      </motion.div>
+    </section>
   );
 }
