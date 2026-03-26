@@ -1,3 +1,5 @@
+import { ChevronRight, ExternalLink } from 'lucide-react';
+
 interface Props {
   position: string;
   company: string;
@@ -30,9 +32,9 @@ export default function ExperienceCard({
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base font-semibold hover:text-primary transition-colors duration-200"
+              className="inline-flex items-center gap-1 text-base font-semibold hover:text-primary transition-colors duration-200"
             >
-              {company} {'->'}
+              {company} <ExternalLink size={14} />
             </a>
           ) : (
             <p className="text-base font-semibold">{company}</p>
@@ -46,7 +48,7 @@ export default function ExperienceCard({
       <ul className="mt-2 flex flex-col gap-1 text-foreground/70">
         {description.map((item, i) => (
           <li key={i} className="flex items-start gap-2">
-            <span className="text-primary">{'>'}</span>
+            <ChevronRight size={16} className="text-primary shrink-0 mt-1" />
             <span>{item}</span>
           </li>
         ))}

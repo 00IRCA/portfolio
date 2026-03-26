@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Menu, X } from 'lucide-react';
 import { SECTION_IDS } from '@/src/constants/sections';
 import Image from 'next/image';
 import ThemeToggle from './ThemeToggle';
@@ -118,12 +119,12 @@ export default function Header() {
 
           {/* Hamburger button (mobile only) */}
           <button
-            className="md:hidden text-2xl"
+            className="md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
           >
-            {menuOpen ? 'x' : '='}
+            {menuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </nav>

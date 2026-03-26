@@ -2,6 +2,7 @@
 
 import { useTheme } from 'next-themes';
 import { useSyncExternalStore } from 'react';
+import { Sun, Moon } from 'lucide-react';
 
 function useIsMounted() {
   return useSyncExternalStore(
@@ -21,8 +22,8 @@ export default function ThemeToggle() {
 
   if (!useIsMounted())
     return (
-      <button aria-label={'Switch to light mode'} className="text-xl">
-        {'Light'}
+      <button aria-label={'Switch to light mode'}>
+        <Sun size={20} />
       </button>
     );
 
@@ -30,9 +31,8 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-      className="text-xl"
     >
-      {isDark ? 'Light' : 'Dark'}
+      {isDark ? <Sun size={20} /> : <Moon size={20} />}
     </button>
   );
 }

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 
 interface Props {
   title: string;
@@ -56,9 +57,9 @@ export default function ProjectCard({
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-semibold text-primary hover:opacity-80 transition-opacity"
+                className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:opacity-80 transition-opacity"
               >
-                Live {'->'}
+                Live <ExternalLink size={14} />
               </a>
             )}
             {repoUrl && (
@@ -66,9 +67,9 @@ export default function ProjectCard({
                 href={repoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-semibold text-foreground/60 hover:text-primary transition-colors duration-200"
+                className="inline-flex items-center gap-1 text-sm font-semibold text-foreground/60 hover:text-primary transition-colors duration-200"
               >
-                GitHub {'->'}
+                GitHub <ExternalLink size={14} />
               </a>
             )}
           </div>
