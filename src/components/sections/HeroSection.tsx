@@ -8,7 +8,7 @@ import { fadeUp, staggerContainer } from '@/src/constants/animations';
 export default function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden min-h-[calc(100vh-72px)] flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-[linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)] bg-size-[40px_40px]"
+      className="relative overflow-hidden min-h-[calc(100vh-72px)] flex flex-col md:flex-row items-center justify-center gap-8 p-8"
       id={SECTION_IDS.home}
     >
       <motion.div

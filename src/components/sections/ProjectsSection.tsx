@@ -9,7 +9,7 @@ import { fadeUp, staggerContainer } from '@/src/constants/animations';
 
 export default function ProjectsSection() {
   return (
-    <Section id={SECTION_IDS.projects} title="Projects" className="bg-foreground/2">
+    <Section id={SECTION_IDS.projects} title="Projects" className="bg-background-alt">
       <motion.div
         className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         variants={staggerContainer}

@@ -30,7 +30,7 @@ function TechGrid({ techs }: { techs: Technology[] }) {
 
 export default function TechnologiesSection() {
   return (
-    <Section id={SECTION_IDS.technologies} title="Technologies" className="bg-foreground/2">
+    <Section id={SECTION_IDS.technologies} title="Technologies" className="bg-background-alt">
       <div className="flex flex-col gap-8">
         <TechGrid techs={experiencedTechs} />
 
