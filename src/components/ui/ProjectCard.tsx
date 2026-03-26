@@ -58,7 +58,7 @@ export default function ProjectCard({
                 rel="noopener noreferrer"
                 className="text-sm font-semibold text-primary hover:opacity-80 transition-opacity"
               >
-                Live ↗
+                Live {'->'}
               </a>
             )}
             {repoUrl && (
@@ -68,7 +68,7 @@ export default function ProjectCard({
                 rel="noopener noreferrer"
                 className="text-sm font-semibold text-foreground/60 hover:text-primary transition-colors duration-200"
               >
-                GitHub ↗
+                GitHub {'->'}
               </a>
             )}
           </div>

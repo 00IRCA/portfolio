@@ -23,7 +23,7 @@ export default function ContactSection() {
               <span className="flex items-center justify-center w-10 h-10 rounded-lg border border-foreground/10 bg-foreground/3 group-hover:border-primary/40 group-hover:bg-primary/5 transition-all duration-200 text-lg">
                 in
               </span>
-              <span>LinkedIn ↗</span>
+              <span>LinkedIn {'->'}</span>
             </a>
           </div>
         </div>

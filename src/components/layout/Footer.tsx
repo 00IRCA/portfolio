@@ -68,7 +68,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-foreground/10 py-4 text-center text-xs text-foreground/40">
-        © {currentYear} Ismael Ruiz · Built with Next.js
+        &copy; {currentYear} Ismael Ruiz &middot; Built with Next.js
       </div>
     </footer>
   );

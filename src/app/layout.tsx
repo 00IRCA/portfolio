@@ -17,12 +17,12 @@ const roboto = Roboto({
 const BASE_URL = 'https://ismaelruizcarlin.dev'; // TODO: replace with your actual domain
 
 export const metadata: Metadata = {
-  title: 'Ismael Ruiz — Full Stack Developer',
+  title: 'Ismael Ruiz - Full Stack Developer',
   description:
     'Full Stack developer specializing in React, TypeScript, and Node.js. Building fast, accessible, and polished web applications.',
   metadataBase: new URL(BASE_URL),
   openGraph: {
-    title: 'Ismael Ruiz — Full Stack Developer',
+    title: 'Ismael Ruiz - Full Stack Developer',
     description:
       'Full Stack developer specializing in React, TypeScript, and Node.js. Building fast, accessible, and polished web applications.',
     url: BASE_URL,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ismael Ruiz — Full Stack Developer',
+    title: 'Ismael Ruiz - Full Stack Developer',
     description:
       'Full Stack developer specializing in React, TypeScript, and Node.js. Building fast, accessible, and polished web applications.',
   },

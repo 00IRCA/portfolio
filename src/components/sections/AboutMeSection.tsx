@@ -14,13 +14,13 @@ export default function AboutMeSection() {
         <div className="lg:col-span-3 flex flex-col gap-4 text-lg leading-relaxed text-foreground/80">
           <p>
             I&apos;m a Full Stack Developer with over 3 years of professional experience building
-            modern web applications. I started coding in mid-2020 and haven&apos;t stopped since — I
+            modern web applications. I started coding in mid-2020 and haven&apos;t stopped since&mdash;I
             approach every project as a problem to understand first and code second.
           </p>
           <p>
             I specialize in crafting responsive, high-quality interfaces where design and
             functionality meet. One of my proudest projects was building a full UI from scratch to
-            configure voice control for IoT devices — a complex, user-facing feature that required
+            configure voice control for IoT devices&mdash;a complex, user-facing feature that required
             close attention to both UX detail and technical precision.
           </p>
           <p>
@@ -29,7 +29,7 @@ export default function AboutMeSection() {
             person on the other side of the screen.
           </p>
           <p className="border-l-4 border-primary pl-4 italic text-foreground/60">
-            I&apos;m currently open to new opportunities — remote or hybrid — where I can keep
+            I&apos;m currently open to new opportunities&mdash;remote or hybrid&mdash;where I can keep
             growing and contribute to a team that values craft.
           </p>
         </div>

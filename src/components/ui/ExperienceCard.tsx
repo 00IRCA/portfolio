@@ -32,21 +32,21 @@ export default function ExperienceCard({
               rel="noopener noreferrer"
               className="text-base font-semibold hover:text-primary transition-colors duration-200"
             >
-              {company} ↗
+              {company} {'->'}
             </a>
           ) : (
             <p className="text-base font-semibold">{company}</p>
           )}
         </div>
         <span className="shrink-0 text-sm px-3 py-1 rounded-full border border-foreground/15 text-foreground/50 bg-foreground/5 self-start">
-          {startYear} — {endYear}
+          {startYear} - {endYear}
         </span>
       </div>
 
       <ul className="mt-2 flex flex-col gap-1 text-foreground/70">
         {description.map((item, i) => (
           <li key={i} className="flex items-start gap-2">
-            <span className="text-primary">▸</span>
+            <span className="text-primary">{'>'}</span>
             <span>{item}</span>
           </li>
         ))}

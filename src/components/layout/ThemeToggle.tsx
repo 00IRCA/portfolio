@@ -22,7 +22,7 @@ export default function ThemeToggle() {
   if (!useIsMounted())
     return (
       <button aria-label={'Switch to light mode'} className="text-xl">
-        {'☀️'}
+        {'Light'}
       </button>
     );
 
@@ -32,7 +32,7 @@ export default function ThemeToggle() {
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       className="text-xl"
     >
-      {isDark ? '☀️' : '🌙'}
+      {isDark ? 'Light' : 'Dark'}
     </button>
   );
 }
