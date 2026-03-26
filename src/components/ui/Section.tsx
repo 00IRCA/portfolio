@@ -16,7 +16,7 @@ export default function Section({ id, title, className, children }: Props) {
   return (
     <section id={sectionId} className={className ?? 'bg-background'}>
       <motion.div
-        className="max-w-6xl mx-auto px-8 pt-8 pb-16 md:pb-32 xl:px-0 scroll-mt-20"
+        className="max-w-6xl mx-auto px-8 py-16 md:py-24 xl:px-0 scroll-mt-20"
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
