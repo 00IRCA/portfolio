@@ -22,7 +22,7 @@ export default function Section({ id, title, className, children }: Props) {
       whileInView="show"
       viewport={{ once: true, margin: '-80px' }}
     >
-      <div className="max-w-6xl mx-auto mb-16 md:mb-32 p-8 xl:px-0 scroll-mt-20">
+      <div className="max-w-6xl mx-auto px-8 pt-8 pb-16 md:pb-32 xl:px-0 scroll-mt-20">
         {title && (
           <div className="flex flex-col items-center mb-10 gap-3">
             <h2 className="text-3xl font-bold text-primary text-center">{title}</h2>
