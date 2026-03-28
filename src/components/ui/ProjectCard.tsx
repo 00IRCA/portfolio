@@ -19,7 +19,7 @@ export default function ProjectCard({
   repoUrl,
 }: Props) {
   return (
-    <div className="flex flex-col border border-foreground/10 bg-foreground/3 rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(64,198,255,0.15)] hover:border-primary/30 group">
+    <div className="flex flex-col h-137.5 border border-foreground/10 bg-foreground/3 rounded-xl shadow-sm overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_32px_rgba(64,198,255,0.15)] hover:border-primary/30 group">
       {imageUrl ? (
         <Image
           src={imageUrl}
@@ -35,9 +35,11 @@ export default function ProjectCard({
           </span>
         </div>
       )}
-      <div className="flex flex-col flex-1 p-6">
+      <div className="flex flex-col flex-1 min-h-0 p-6">
         <h3 className="text-xl font-bold text-primary">{title}</h3>
-        <p className="mt-2 text-foreground/70 leading-relaxed flex-1">{description}</p>
+        <p className="mt-2 text-foreground/70 leading-relaxed flex-1  overflow-y-auto">
+          {description}
+        </p>
         {technologies.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
             {technologies.map((tech) => (
