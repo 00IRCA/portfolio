@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Mail } from 'lucide-react';
 import Section from '../ui/Section';
 import ContactForm from '../ui/ContactForm';
 import { SECTION_IDS } from '@/src/constants/sections';
@@ -15,6 +15,12 @@ export default function ContactSection() {
             connect, feel free to reach out.
           </p>
           <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-3 text-foreground/70">
+              <span className="flex items-center justify-center w-10 h-10 rounded-lg border border-foreground/10 bg-foreground/3 transition-all duration-200">
+                <Mail size={18} />
+              </span>
+              <span>00ircarlin@gmail.com</span>
+            </div>
             <a
               href="https://www.linkedin.com/in/ismael-ruiz-carlin/"
               target="_blank"
