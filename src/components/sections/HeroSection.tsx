@@ -36,13 +36,13 @@ export default function HeroSection() {
         <motion.div variants={fadeUp} className="flex flex-row items-center gap-4 mt-2">
           <a
             href={`#${SECTION_IDS.contact}`}
-            className="px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:opacity-90 transition-all duration-200 hover:scale-105 shadow-[0_0_20px_rgba(64,198,255,0.3)]"
+            className="px-6 py-3 bg-primary text-background font-semibold rounded-lg hover:opacity-90 transition-all duration-200 hover:scale-105 shadow-[0_0_20px_rgba(64,198,255,0.3)] whitespace-nowrap"
           >
             Get in Touch
           </a>
           <a
             href={`#${SECTION_IDS.projects}`}
-            className="px-6 py-3 border border-foreground/20 rounded-lg font-semibold hover:border-primary hover:text-primary transition-all duration-200"
+            className="px-6 py-3 border border-foreground/20 rounded-lg font-semibold hover:border-primary hover:text-primary transition-all duration-200 whitespace-nowrap"
           >
             View Projects
           </a>
