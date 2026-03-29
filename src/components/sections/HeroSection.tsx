@@ -1,7 +1,7 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
-import InteractiveImage from '../ui/InteractiveImage';
 import { SECTION_IDS } from '@/src/constants/sections';
 import { fadeUp, staggerContainer } from '@/src/constants/animations';
 
@@ -49,7 +49,21 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
       <div className="relative z-10 hidden md:block">
-        <InteractiveImage width={700} height={700} alt="hero" src={'/hero-image.png'} />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{
+            opacity: 1,
+            scale: 1,
+            y: [0, -20, 0],
+          }}
+          transition={{
+            opacity: { duration: 0.6, delay: 0.4 },
+            scale: { duration: 0.6, delay: 0.4 },
+            y: { duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 0.5 },
+          }}
+        >
+          <Image width={700} height={700} alt="hero" src="/hero-image.png" />
+        </motion.div>
       </div>
     </section>
   );
