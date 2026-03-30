@@ -1,10 +1,11 @@
+import { Clock, Code2, Wifi } from 'lucide-react';
 import Section from '../ui/Section';
 import { SECTION_IDS } from '@/src/constants/sections';
 
 const stats = [
-  { value: '3+', label: 'Years Experience' },
-  { value: 'Full Stack', label: 'Specialization' },
-  { value: 'Remote Ready', label: 'Work Style' },
+  { value: '3+', label: 'Years Experience', icon: Clock },
+  { value: 'Full Stack', label: 'Specialization', icon: Code2 },
+  { value: 'Remote Ready', label: 'Work Style', icon: Wifi },
 ];
 
 export default function AboutMeSection() {
@@ -34,14 +35,21 @@ export default function AboutMeSection() {
           </p>
         </div>
 
-        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
-          {stats.map((stat) => (
+        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-2">
+          {stats.map(({ label, value, icon: Icon }) => (
             <div
-              key={stat.label}
-              className="flex flex-col items-center justify-center gap-1 p-6 rounded-xl border border-foreground/10 bg-foreground/3 text-center"
+              key={label}
+              className="flex items-center gap-4 p-5 rounded-lg border border-foreground/10 bg-foreground/3 transition-colors hover:border-primary/30 hover:bg-foreground/5"
             >
-              <span className="text-2xl font-bold text-primary">{stat.value}</span>
-              <span className="text-sm text-foreground/60 font-medium">{stat.label}</span>
+              <div className="shrink-0 flex items-center justify-center w-11 h-11 rounded-lg bg-linear-to-br from-primary/15 to-primary/5 border border-primary/20">
+                <Icon className="w-5 h-5 text-primary" />
+              </div>
+              <div className="flex flex-col gap-0.5">
+                <span className="text-xs font-medium text-foreground/40 uppercase tracking-wider">
+                  {label}
+                </span>
+                <span className="text-xl font-bold text-foreground">{value}</span>
+              </div>
             </div>
           ))}
         </div>
