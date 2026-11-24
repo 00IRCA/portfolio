@@ -6,10 +6,20 @@ export const experience = [
     startYear: '2025',
     endYear: 'Present',
     description: [
+      'Developed a Cloud-to-Cloud integration with Google Home, enabling users to control smart home automation devices through Google Assistant and the Google Home app.',
       'Continued development of the main React/Redux app for voice control configuration in smart home devices.',
       'Built an email referral system using AWS Lambda, API Gateway, DynamoDB, and Node.js.',
     ],
-    technologies: ['React', 'Redux', 'SCSS', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'Node.js'],
+    technologies: [
+      'React',
+      'Redux',
+      'SCSS',
+      'AWS Lambda',
+      'API Gateway',
+      'DynamoDB',
+      'Node.js',
+      'Google Smart Home',
+    ],
   },
   {
     position: 'Frontend Developer',
