@@ -6,9 +6,9 @@ export const experience = [
     startYear: '2025',
     endYear: 'Present',
     description: [
-      'Developed a Cloud-to-Cloud integration with Google Home, enabling users to control smart home automation devices through Google Assistant and the Google Home app.',
-      'Continued development of the main React/Redux app for voice control configuration in smart home devices.',
-      'Built an email referral system using AWS Lambda, API Gateway, DynamoDB, and Node.js.',
+      'Built a Cloud-to-Cloud integration with Google Home that lets users control their smart home devices through Google Assistant and the Google Home app.',
+      'Maintained and extended the core React/Redux application used to configure voice control for smart home devices.',
+      'Designed and built a serverless email referral system with Node.js on AWS Lambda, API Gateway, and DynamoDB.',
     ],
     technologies: [
       'React',
@@ -28,9 +28,9 @@ export const experience = [
     startYear: '2023',
     endYear: '2025',
     description: [
-      'Developed and implemented the main app for configuring voice control in smart home devices.',
-      'Maintained and expanded a marketing site built with the Middleman static site generator (Embedded Ruby).',
-      'Delivered pixel-perfect UI implementation using SCSS.',
+      'Developed the core React/Redux application used to configure voice control for smart home devices.',
+      "Maintained and extended the company's marketing website, built with the Middleman static site generator and Embedded Ruby (ERB).",
+      'Turned designs into pixel-perfect user interfaces using SCSS.',
     ],
     technologies: ['React', 'Redux', 'Axios', 'SCSS', 'Middleman', 'Embedded Ruby'],
   },
