@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
+import Footer from '../components/layout/Footer';
+import Header from '../components/layout/Header';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -46,7 +48,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${roboto.variable} antialiased`}>
-        <ThemeProvider attribute="data-theme">{children}</ThemeProvider>
+        <ThemeProvider attribute="data-theme">
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
