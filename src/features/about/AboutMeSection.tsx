@@ -1,5 +1,5 @@
 import { Clock, Code2, Wifi } from 'lucide-react';
-import Section from '../ui/Section';
+import Section from '@/src/components/ui/Section';
 import { SECTION_IDS } from '@/src/constants/sections';
 
 const stats = [

@@ -1,6 +1,6 @@
 import { ExternalLink, Mail } from 'lucide-react';
-import Section from '../ui/Section';
-import ContactForm from '../ui/ContactForm';
+import Section from '@/src/components/ui/Section';
+import ContactForm from './ContactForm';
 import { SECTION_IDS } from '@/src/constants/sections';
 
 export default function ContactSection() {

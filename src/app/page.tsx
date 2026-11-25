@@ -1,11 +1,11 @@
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
-import AboutMeSection from '../components/sections/AboutMeSection';
-import ContactSection from '../components/sections/ContactSection';
-import ExperienceSection from '../components/sections/ExperienceSection';
-import HeroSection from '../components/sections/HeroSection';
-import ProjectsSection from '../components/sections/ProjectsSection';
-import TechnologiesSection from '../components/sections/TechnologiesSection';
+import AboutMeSection from '../features/about/AboutMeSection';
+import ContactSection from '../features/contact/ContactSection';
+import ExperienceSection from '../features/experience/ExperienceSection';
+import HeroSection from '../features/hero/HeroSection';
+import ProjectsSection from '../features/projects/ProjectsSection';
+import TechnologiesSection from '../features/technologies/TechnologiesSection';
 
 export default function Home() {
   return (

@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Section from '../ui/Section';
+import Section from '@/src/components/ui/Section';
 import { SECTION_IDS } from '@/src/constants/sections';
-import { technologies, Technology } from '@/src/data/technologies';
-import TechCard from '../ui/TechCard';
+import { technologies, Technology } from './technologies.data';
+import TechCard from './TechCard';
 import { fadeUp, staggerContainer } from '@/src/constants/animations';
 
 const experiencedTechs = technologies.filter((tech) => tech.level === 'experienced');

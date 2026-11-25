@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { projects } from '@/src/data/projects';
-import ProjectCard from '../ui/ProjectCard';
-import Section from '../ui/Section';
+import { projects } from './projects.data';
+import ProjectCard from './ProjectCard';
+import Section from '@/src/components/ui/Section';
 import { SECTION_IDS } from '@/src/constants/sections';
 import { fadeUp, staggerContainer } from '@/src/constants/animations';
 

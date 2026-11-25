@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { experience } from '@/src/data/experience';
-import ExperienceCard from '../ui/ExperienceCard';
-import Section from '../ui/Section';
+import { experience } from './experience.data';
+import ExperienceCard from './ExperienceCard';
+import Section from '@/src/components/ui/Section';
 import { SECTION_IDS } from '@/src/constants/sections';
 import { fadeUp, staggerContainer } from '@/src/constants/animations';
 
