@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Roboto } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import Footer from '../components/layout/Footer';
@@ -7,12 +7,6 @@ import Header from '../components/layout/Header';
 
 const inter = Inter({
   variable: '--font-inter',
-  subsets: ['latin'],
-});
-
-const roboto = Roboto({
-  weight: ['400', '500', '700'],
-  variable: '--font-roboto',
   subsets: ['latin'],
 });
 
@@ -47,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${roboto.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased`}>
         <ThemeProvider attribute="data-theme">
           <Header />
           {children}
