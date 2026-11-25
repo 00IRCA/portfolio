@@ -16,7 +16,7 @@ const roboto = Roboto({
   subsets: ['latin'],
 });
 
-const BASE_URL = 'https://ismaelruizcarlin.dev'; // TODO: replace with your actual domain
+const BASE_URL = 'https://ismaelruizcarlin.dev';
 
 export const metadata: Metadata = {
   title: 'Ismael Ruiz - Full Stack Developer',
